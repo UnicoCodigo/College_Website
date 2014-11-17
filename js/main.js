@@ -17,9 +17,7 @@
         //Position the menu initially
         menu.self.css('right', menu.width);
         menu.self.css('display', 'block');
-        
-        //Initialize wow.js
-        
+                
         //Functionality for menu buttons
         menu.icon.click(function () {
             menu.self.animate({ 'right': '0' }, 200);
@@ -49,7 +47,7 @@
                 menu.icon.div.css('border-color', '#000');
             } else {
                 header.css('background', 'rgba(200, 200, 200, 0)');
-                header.css('color', '#fff');
+                header.css('color', '#fff', 400);
                 menu.icon.div.css('border-color', '#fff');
             }
         });
