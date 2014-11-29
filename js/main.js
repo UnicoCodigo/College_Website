@@ -42,13 +42,9 @@
         //Fade in header background on scroll
         $(window).bind('scroll', function () {
             if ($(this).scrollTop() > 50) {
-                header.css('background', 'rgba(200, 200, 200, 0.8)');
-                header.css('color', '#000');
-                menu.icon.div.css('border-color', '#000');
+                header.css('background', 'rgba(50, 50, 50, 0.8)');
             } else {
-                header.css('background', 'rgba(200, 200, 200, 0)');
-                header.css('color', '#fff', 400);
-                menu.icon.div.css('border-color', '#fff');
+                header.css('background', 'rgba(0, 0, 0, 0)');
             }
         });
     });
