@@ -11,6 +11,7 @@
             cross: $('.cross-icon')
         },
             header = $('.primary-header');
+        
         menu.width = (menu.self.outerWidth() * (-1)) + 'px';
         menu.icon.div = $('.menu-icon div');
         
@@ -42,9 +43,13 @@
         //Fade in header background on scroll
         $(window).bind('scroll', function () {
             if ($(this).scrollTop() > 50) {
-                header.css('background', 'rgba(50, 50, 50, 0.8)');
+                header.css('background', 'rgba(255, 255, 255, 0.9)');
+                header.css('color', 'rgb(0, 0, 0)');
+                menu.icon.div.css('border-color', 'rgb(0, 0, 0)');
             } else {
-                header.css('background', 'rgba(0, 0, 0, 0)');
+                header.css('background', 'rgba(255, 255, 255, 0)');
+                header.css('color', 'rgb(255, 255, 255)');
+                menu.icon.div.css('border-color', 'rgb(255, 255, 255)');
             }
         });
     });
